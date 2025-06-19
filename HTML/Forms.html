@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form action="/action">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your name" name="username" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" name="password" required>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter age" name="age" required>
+        </div>
+
+        <!-- Checkbox -->
+        <div>
+            <label for="ageCheck">I am 18+</label>
+            <input type="checkbox" id="ageCheck" name="isAdult">
+        </div>
+
+        <!-- Radio buttons -->
+        <div>
+            Choose your favorite fruit:
+            <br>
+            <input type="radio" name="fruit" id="apple" value="apple">
+            <label for="apple">Apple</label>
+            <input type="radio" name="fruit" id="banana" value="banana">
+            <label for="banana">Banana</label>
+            <input type="radio" name="fruit" id="orange" value="orange">
+            <label for="orange">Orange</label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div>
+            Choose your favorite subjects:
+            <br>
+            <input type="checkbox" id="math" name="subjects" value="math">
+            <label for="math">Math</label>
+            <input type="checkbox" id="science" name="subjects" value="science">
+            <label for="science">Science</label>
+            <input type="checkbox" id="english" name="subjects" value="english">
+            <label for="english">English</label>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="button">Hello</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <hr>
+
+    <!-- YouTube Search -->
+    <form action="https://www.youtube.com/results">
+        <input type="text" placeholder="Search YouTube" name="search_query">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Google Search -->
+    <form action="https://www.google.com/search">
+        <input type="text" placeholder="Search Google" name="q">
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Wikipedia Search -->
+    <form action="https://en.wikipedia.org/w/index.php">
+        <input type="text" placeholder="Search Wikipedia" name="search">
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    <!-- Dropdown Form -->
+    <form action="/submit">
+        <div>
+            Choose your country and language:
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option>Select your option</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="canada">Canada</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="language">Language:</label>
+            <select id="language" name="language">
+                <option>Select your option</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Range input element-->
+    <form action="/submit">
+        <div>
+            <label for="volume">Volume:</label>
+            <input type="range" id="volume" name="volume" min="0" max="100" step="10">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <hr>
+
+    <!-- Text Area Element -->
+    <form action="/submit">
+        <div>
+            <label for="Feedback">Please enter your feedback:</label><br>
+            <textarea id="Feedback" name="Feedback" rows="5" cols="40"
+                placeholder="Type your thoughts here..."></textarea>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
