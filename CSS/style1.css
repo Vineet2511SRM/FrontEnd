@@ -1,0 +1,40 @@
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: red;
+    background-color: lightgray;
+    font-weight: bold;
+}
+
+/* Subheading */
+h2 {
+    text-align: left;
+    color: black;
+    background-color: rgb(0, 255, 0); /* bright green */
+    font-weight: normal;
+}
+
+/* Sub-subheading */
+h3 {
+    text-align: center;
+    color: blue;
+    background-color: rgb(255, 255, 0); /* yellow */
+    font-weight: 300;
+}
+
+/* Paragraphs */
+p {
+    text-align: justify;
+    color: black;
+    background-color: white;
+    font-weight: normal;
+}
+
+/* Buttons */
+button {
+    text-align: center;
+    color: gold;
+    background-color: rgb(131, 20, 131); /* dark purple */
+    font-weight: bold;
+}
