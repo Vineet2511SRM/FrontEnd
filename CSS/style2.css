@@ -36,3 +36,21 @@ h3 {
 nav ul li a { /* descendant selector */
     color : hotpink
 }
+
+
+/* Adjacent Sibling Combinator */
+p + h3 {
+    color: red;
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color: chocolate
+}
+
+/* Child Combinator */
+div > input {
+    background-color: lightgray;
+    color: black;
+}
