@@ -1,0 +1,38 @@
+/* Universal Selector */
+* {
+    font-family: "Courier New";
+
+}
+
+h1 {
+    color: #b92b27
+}
+
+h3 {
+    color: aqua;
+}
+
+#login {
+    background-color: white;
+    color: black;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: green;
+    color: aliceblue
+}
+
+/*descendant selector*/
+.user a {
+    color: blue;
+    background-color: yellow;
+}
+
+nav ul li a { /* descendant selector */
+    color : hotpink
+}
