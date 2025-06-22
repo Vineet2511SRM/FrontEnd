@@ -1,0 +1,17 @@
+/* For applying anything to whole page */
+* {
+    font-family: courier new;
+}
+
+h1{
+    color: #1b74e4
+}
+
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+.userbtn{
+    background-color: aqua;
+}
