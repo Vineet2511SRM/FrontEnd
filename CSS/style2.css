@@ -1,3 +1,8 @@
+/* !important */
+h3{
+    color: red !important;
+    background-color: antiquewhite !important;
+}
 /* Universal Selector */
 * {
     font-family: "Courier New";
@@ -141,4 +146,26 @@ input[type="radio"]:checked+ label {
 
 div:nth-of-type(2) {
     background-color: lightgreen;
+}
+
+
+/* Pseudo Element */
+h1::first-letter {
+    color: aquamarine
+}
+
+p::first-line {
+    color: darkblue;
+}
+
+p::selection{
+    background-color: yellow;
+}
+
+h3{
+    background-color : yellow
+}
+
+h3{
+    background-color: black;
 }
