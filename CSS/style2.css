@@ -14,7 +14,6 @@ h3 {
 
 #login {
     background-color: white;
-    color: black;
 }
 
 #signup {
@@ -53,4 +52,93 @@ p + h3 {
 div > input {
     background-color: lightgray;
     color: black;
+}
+
+/* Attribute Selector with different types */
+input[type = "text"] {
+    background-color: lightblue;
+    color: red;
+}
+
+input[type = "password"] {
+    background-color: black;
+    color: green;
+}
+
+/* ===== ATTRIBUTE SELECTOR ADDITIONS ===== */
+
+/* 1. [attr] — any element with that attribute */
+input[required] {
+    border: 2px dashed red;
+}
+
+/* 2. [attr="value"] — exact match */
+button[type="submit"] {
+    background-color: darkgreen;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: darkred;
+    color: white;
+}
+
+/* 3. [attr~="value"] — contains word in space-separated list */
+p[class~="highlight"] {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* 4. [attr|="value"] — exact or value-start-hyphen */
+p[lang|="en"] {
+    color: blue;
+}
+
+/* 5. [attr^="value"] — starts with */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. [attr$="value"] — ends with */
+img[src$=".jpg"] {
+    border: 3px solid purple;
+}
+
+/* 7. [attr*="value"] — contains */
+a[href*="youtube"] {
+    color: red;
+    font-weight: bold;
+}
+
+/* #myId p {
+    color: green
+} */
+
+div[id="myId"] p {
+    color: green;
+}
+
+/* Pseudo Classes */
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+button:active {
+    background-color: hotpink;
+    color: black;
+}
+
+p:active{
+    font-weight: bold;
+    color: blue;
+}
+
+input[type="radio"]:checked+ label {
+    background-color: red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2) {
+    background-color: lightgreen;
 }
