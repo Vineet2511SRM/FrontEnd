@@ -1,0 +1,21 @@
+/* Border properties */
+div {
+    height: 200px;
+    width: 500px;
+    background-color: pink;
+
+    border: 5px solid black;
+
+    /* Rounded corners */
+    border-top-right-radius: 10px;
+}
+
+/* Main Heading Border */
+h1 {
+    border-top: 2px dashed greenyellow;
+    border-bottom: 2px dashed greenyellow;
+
+    /* Rounded top corners only */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

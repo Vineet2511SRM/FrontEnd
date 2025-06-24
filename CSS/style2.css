@@ -1,46 +1,66 @@
-/* !important */
-h3{
+/* !important overrides ALL h3 styles below it */
+h3 {
     color: red !important;
     background-color: antiquewhite !important;
+    height: 60px;
+    width: 100%;
+    border: 2px solid red;
+    font-weight: bold;
 }
+
 /* Universal Selector */
 * {
     font-family: "Courier New";
-
 }
 
+/* Heading Styles */
 h1 {
-    color: #b92b27
+    color: #b92b27;
+    height: 80px;
+    width: 100%;
+    border: 3px solid maroon;
 }
 
-h3 {
-    color: aqua;
+/* Descendant Selectors */
+.user a {
+    color: blue;
+    background-color: yellow;
+    height: auto;
+    width: fit-content;
+    border: 1px dashed navy;
 }
 
+nav ul li a {
+    color: hotpink;
+    height: auto;
+    width: fit-content;
+    border: 1px dotted hotpink;
+}
+
+/* ID Selectors */
 #login {
     background-color: white;
+    height: 40px;
+    width: 100px;
+    border: 2px solid black;
 }
 
 #signup {
     background-color: #b92b27;
     color: white;
+    height: 40px;
+    width: 100px;
+    border: 2px solid crimson;
 }
 
+/* Class Selectors */
 .upvote {
     background-color: green;
-    color: aliceblue
+    color: aliceblue;
+    height: 35px;
+    width: 100px;
+    border: 2px solid darkgreen;
 }
-
-/*descendant selector*/
-.user a {
-    color: blue;
-    background-color: yellow;
-}
-
-nav ul li a { /* descendant selector */
-    color : hotpink
-}
-
 
 /* Adjacent Sibling Combinator */
 p + h3 {
@@ -50,122 +70,136 @@ p + h3 {
 
 .upvote + button {
     background-color: cornflowerblue;
-    color: chocolate
+    color: chocolate;
+    height: 35px;
+    width: 100px;
+    border: 2px solid chocolate;
 }
 
 /* Child Combinator */
 div > input {
     background-color: lightgray;
     color: black;
+    height: 30px;
+    width: 200px;
+    border: 1px solid gray;
 }
 
-/* Attribute Selector with different types */
-input[type = "text"] {
+/* Attribute Selectors */
+input[type="text"] {
     background-color: lightblue;
     color: red;
+    height: 30px;
+    width: 200px;
+    border: 1px solid red;
 }
 
-input[type = "password"] {
+input[type="password"] {
     background-color: black;
     color: green;
+    height: 30px;
+    width: 200px;
+    border: 1px solid limegreen;
 }
 
-/* ===== ATTRIBUTE SELECTOR ADDITIONS ===== */
-
-/* 1. [attr] — any element with that attribute */
 input[required] {
     border: 2px dashed red;
 }
 
-/* 2. [attr="value"] — exact match */
+/* Buttons */
 button[type="submit"] {
     background-color: darkgreen;
     color: white;
+    height: 40px;
+    width: 120px;
+    border: 2px groove darkgreen;
 }
 
 button[type="reset"] {
     background-color: darkred;
     color: white;
+    height: 40px;
+    width: 120px;
+    border: 2px groove darkred;
 }
 
-/* 3. [attr~="value"] — contains word in space-separated list */
+/* Paragraph Attribute Types */
 p[class~="highlight"] {
     background-color: yellow;
     font-weight: bold;
+    height: auto;
+    width: 95%;
+    border: 2px dashed orange;
 }
 
-/* 4. [attr|="value"] — exact or value-start-hyphen */
 p[lang|="en"] {
     color: blue;
 }
 
-/* 5. [attr^="value"] — starts with */
+/* Anchor Tag Attribute Selectors */
 a[href^="https"] {
     color: green;
+    border: 1px solid green;
 }
 
-/* 6. [attr$="value"] — ends with */
 img[src$=".jpg"] {
     border: 3px solid purple;
+    height: 150px;
+    width: 150px;
 }
 
-/* 7. [attr*="value"] — contains */
 a[href*="youtube"] {
     color: red;
     font-weight: bold;
+    border: 1px dotted red;
 }
 
-/* #myId p {
-    color: green
-} */
-
+/* Custom ID Selector */
 div[id="myId"] p {
     color: green;
+    width: 90%;
+    border: 1px solid green;
 }
 
 /* Pseudo Classes */
 button:hover {
     background-color: black;
     color: white;
+    border: 2px solid yellow;
 }
 
 button:active {
     background-color: hotpink;
     color: black;
+    border: 2px solid black;
 }
 
-p:active{
+p:active {
     font-weight: bold;
     color: blue;
+    border: 2px solid blue;
 }
 
-input[type="radio"]:checked+ label {
+input[type="radio"]:checked + label {
     background-color: red;
     font-weight: bold;
+    border: 1px solid red;
 }
 
 div:nth-of-type(2) {
     background-color: lightgreen;
+    border: 2px solid green;
 }
 
-
-/* Pseudo Element */
+/* Pseudo Elements */
 h1::first-letter {
-    color: aquamarine
+    color: aquamarine;
 }
 
 p::first-line {
     color: darkblue;
 }
 
-p::selection{
+p::selection {
     background-color: yellow;
-}
-
-h3{
-    background-color : yellow
-}
-
-h3{
-    background-color: black;
 }
