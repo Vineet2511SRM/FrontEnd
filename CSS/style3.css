@@ -1,21 +1,41 @@
 /* Border properties */
 div {
-    height: 200px;
+    height: auto;
     width: 500px;
-    background-color: pink;
-
+    background-color: lightpink;
     border: 5px solid black;
+    border-radius: 20px;
 
-    /* Rounded corners */
-    border-top-right-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Margin on all sides */
+    margin: 50px auto;
 }
 
 /* Main Heading Border */
 h1 {
     border-top: 2px dashed greenyellow;
     border-bottom: 2px dashed greenyellow;
-
-    /* Rounded top corners only */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+
+    padding: 10px;
+    text-align: center;
+
+    /* Margin all around */
+    margin: 0;
+}
+
+/* Stylish Button */
+button {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 30px;
+    background-color: yellow;
+
+    /* Margin all around */
+    margin: 20px auto;
 }
