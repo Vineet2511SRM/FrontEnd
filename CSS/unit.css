@@ -1,0 +1,49 @@
+/* Base font-size for rem/em calculations */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Common box styles */
+.box {
+  display: inline-block;
+  text-align: center;
+  line-height: 3;
+  margin: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Box using pixels */
+.box-px {
+  width: 200px;
+  height: 100px;
+  background-color: #4CAF50;
+}
+
+/* Box using percentage (relative to body width) */
+.box-percent {
+  width: 30%;
+  height: 100px;
+  background-color: #2196F3;
+}
+
+/* Box using em (relative to parent font-size) */
+.box-em {
+  width: 12.5em; /* 12.5 * 16px = 200px */
+  height: 6.25em; /* 6.25 * 16px = 100px */
+  background-color: #FF9800;
+  font-size: 1em; /* same as base (16px) */
+}
+
+/* Box using rem (relative to root html font-size) */
+.box-rem {
+  width: 12.5rem; /* 12.5 * 16px = 200px */
+  height: 6.25rem; /* 6.25 * 16px = 100px */
+  background-color: #9C27B0;
+}
