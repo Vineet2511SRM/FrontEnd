@@ -1,22 +1,48 @@
-body{
-    font-size:30px;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
 }
 
-hr{
-    border: 1px solid #000;
+h1 {
+    text-align: center;
+    color: #333;
 }
-#alpha{
-    height:200px;
-    width:200px;
-    background-color: #4dff00ff; /*Here a9 shows alpha channel */
+
+/* Alpha color demo box */
+#alpha {
+    height: 100px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.5);
+    /* Red with 50% alpha */
     border: 2px solid black;
+    margin-bottom: 20px;
 }
 
-#opacity{
-    height:200px;
-    width:200px;
-    border:2px solid black;
-    background-color: #ffa511;
-    opacity : 0; /*0 opacity sb gyb krdeta hai*/
-    opacity:1;
+/* Opacity demo box */
+#opacity {
+    height: 150px;
+    width: 200px;
+    background-color: green;
+    opacity: 0.6;
+    /* Applies to the whole box + content */
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Transition demo box */
+#transition {
+    height: 150px;
+    width: 200px;
+    background-color: aqua;
+    
+    /* transition: property duration timing-function delay */
+    transition: all 1s ease-in-out 1s;
+}
+
+#transition:hover {
+    border-radius: 50%; /* Makes it a circle */
+    width: 150px;       /* Equal width and height for perfect circle */
+    background-color: coral; /* Color change for fun */
 }
