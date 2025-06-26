@@ -1,0 +1,22 @@
+body{
+    font-size:30px;
+}
+
+hr{
+    border: 1px solid #000;
+}
+#alpha{
+    height:200px;
+    width:200px;
+    background-color: #4dff00ff; /*Here a9 shows alpha channel */
+    border: 2px solid black;
+}
+
+#opacity{
+    height:200px;
+    width:200px;
+    border:2px solid black;
+    background-color: #ffa511;
+    opacity : 0; /*0 opacity sb gyb krdeta hai*/
+    opacity:1;
+}
