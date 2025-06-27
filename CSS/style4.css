@@ -46,3 +46,52 @@ h1 {
     width: 150px;       /* Equal width and height for perfect circle */
     background-color: coral; /* Color change for fun */
 }
+
+section{
+    margin-top:100px;
+}
+
+section div{
+    width:200px;
+    height:50px;
+    text-align: center;
+    background-color: #7aa874;
+    border:2px solid black;
+    margin:10px auto;
+}
+
+section div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+
+section div:nth-of-type(2n){
+    background-color: #ebb02d;
+}
+
+/* Transform properties */
+
+#one { 
+/* Transform rotate */
+    transform: rotate(45deg);
+}
+
+#two{
+    /* Transform scale */
+    transform:scale(0.5)
+}
+
+#three{
+    /* Transform translate */
+    transform: translate(-100px,-100px)
+}
+
+#four{
+    /* Transform skew */
+    transform: skew(45deg);
+}
+
+#five{
+     transform: rotate(30deg) translateY(-20px) scale(1.2) skew(45deg);
+}
+
+/* Box Shadow */
