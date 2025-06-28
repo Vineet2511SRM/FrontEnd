@@ -64,9 +64,7 @@ section div:nth-of-type(2n){
     background-color: #f7db6a;
 }
 
-section div:nth-of-type(2n){
-    background-color: #ebb02d;
-}
+
 
 /* Transform properties */
 
@@ -113,4 +111,15 @@ section div:nth-of-type(2n){
 #shadowBox:hover {
     box-shadow: 0 0 30px 10px rgba(0, 128, 255, 0.6); /* Glowing blue on hover */
     background-color: #f0f8ff;
+}
+
+/* Background Image */
+#background-image {
+    width:400px;
+    height:200px;
+    background-color: #7aa874;
+    margin:10px auto;
+    border: 2px solid black;
+    background-image: url("background.jpg");
+    background-size: cover;
 }
