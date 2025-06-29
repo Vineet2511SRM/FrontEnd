@@ -2,8 +2,8 @@
        It should have 'ease-in' speed curve & 0.5s delay  */
 
 #box1 {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: green;
   transition: 2s ease-in width 0.5s;
 }
