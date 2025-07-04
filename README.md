@@ -45,7 +45,6 @@ Feel free to explore, fork, and tinker with anything here!
 - 🎯 [Instagram](https://www.instagram.com/vineet__seth)  
 - 🐦 [X/Twitter](https://twitter.com/vineet2511_05)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/vineet-seth-92a09532b)
-[Email ✉️](emperorvineet7@gmail.com)
 
 ---
 
