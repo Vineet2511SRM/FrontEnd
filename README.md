@@ -1,9 +1,8 @@
-
-2. **Open in Browser**
+**Open in Browser**
 - Simply open `index.html` to explore demos
 - Try resizing, hover effects, and inspect styles interactively
 
-3. **Make it Yours**
+**Make it Yours**
 - Customize colors, sizes, and animations
 - Add your own sections (e.g. Flexbox, Grid, responsive media queries)
 - Use as a starter kit for future projects
