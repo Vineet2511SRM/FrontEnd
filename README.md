@@ -41,7 +41,7 @@ Hey, I’m **Vineet Seth**, a CSE student at SRM KTR, passionate about **cyberse
 My motto: *Code. Break. Fix. Repeat.*  
 Feel free to explore, fork, and tinker with anything here!
 
-- 🎯 [Instagram](https://www.instagram.com/vineet__seth)  
+- How to reach me [Instagram](https://www.instagram.com/vineet__seth)  
 - 🐦 [X/Twitter](https://twitter.com/vineet2511_05)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/vineet-seth-92a09532b)
 
