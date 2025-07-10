@@ -9,7 +9,7 @@
 
 ---
 
-## 🔧 Tech Stack
+## 🔧 Tech Stack of the repo
 
 - HTML5  
 - CSS3 (Flexbox, Transforms, Transitions, Box‑Shadow, RGBA/HSLA, etc.)  
