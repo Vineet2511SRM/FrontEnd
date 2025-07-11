@@ -151,7 +151,7 @@ img[src$=".jpg"] {
 a[href*="youtube"] {
     color: red;
     font-weight: bold;
-    border: 1px dotted red;
+    border: 1px dashed red;
 }
 
 /* Custom ID Selector */
