@@ -1,16 +1,15 @@
-
-2. **Open in Browser**
+**Open in Browser**
 - Simply open `index.html` to explore demos
 - Try resizing, hover effects, and inspect styles interactively
 
-3. **Make it Yours**
+**Make it Yours**
 - Customize colors, sizes, and animations
 - Add your own sections (e.g. Flexbox, Grid, responsive media queries)
 - Use as a starter kit for future projects
 
 ---
 
-## 🔧 Tech Stack
+## 🔧 Tech Stack of the repo
 
 - HTML5  
 - CSS3 (Flexbox, Transforms, Transitions, Box‑Shadow, RGBA/HSLA, etc.)  
@@ -42,7 +41,7 @@ Hey, I’m **Vineet Seth**, a CSE student at SRM KTR, passionate about **cyberse
 My motto: *Code. Break. Fix. Repeat.*  
 Feel free to explore, fork, and tinker with anything here!
 
-- 🎯 [Instagram](https://www.instagram.com/vineet__seth)  
+- How to reach me [Instagram](https://www.instagram.com/vineet__seth)  
 - 🐦 [X/Twitter](https://twitter.com/vineet2511_05)  
 - 💼 [LinkedIn](https://www.linkedin.com/in/vineet-seth-92a09532b)
 
