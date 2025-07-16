@@ -9,7 +9,7 @@
 
 ---
 
-## 🔧 Tech Stack of the repo
+## 🔧 Tech Stack of the repository 
 
 - HTML5  
 - CSS3 (Flexbox, Transforms, Transitions, Box‑Shadow, RGBA/HSLA, etc.)  
@@ -35,7 +35,7 @@
 
 ---
 
-## 👨‍💻 About Me
+## 👨‍💻 Info about me
 
 Hey, I’m **Vineet Seth**, a CSE student at SRM KTR, passionate about **cybersecurity**, frontend development, and clean code.  
 My motto: *Code. Break. Fix. Repeat.*  
