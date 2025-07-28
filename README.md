@@ -1,4 +1,4 @@
-# 🎨 CSS Playground – Explore, Tweak, Master
+# 🎨 Web dev Playground – Explore, Tweak, Master
 
 Welcome to a hands-on playground for HTML and CSS where you can **interact, break things, fix them, and level up** your frontend skills.
 
