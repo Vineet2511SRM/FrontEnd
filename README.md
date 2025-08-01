@@ -4,7 +4,7 @@ Welcome to your ultimate HTML/CSS playground where you **tinker, mess up (on pur
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start..
 
 1. Clone or download this repo.
 2. Open `index.html` in your browser – **no build tools, no stress**.
@@ -14,7 +14,7 @@ Welcome to your ultimate HTML/CSS playground where you **tinker, mess up (on pur
 
 ---
 
-## 🛠️ Customize & Build Your Own Vibe
+## 🛠️ Customize & Build Your Own Vibe..
 
 - 🎨 Tweak **colors, fonts, spacing, and animations** freely.
 - 🔧 Play with **Flexbox**, **CSS Grid**, and **media queries**.
@@ -27,7 +27,7 @@ Perfect as a **starter kit** for:
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Tech Stack..
 
 - 🧱 **HTML5** – semantic & accessible
 - 🎨 **CSS3** – pure styles, no frameworks
@@ -37,7 +37,7 @@ Perfect as a **starter kit** for:
 
 ---
 
-## 👀 Who’s This For?
+## 👀 Who’s This For?..
 
 Whether you're a:
 - 🐣 Beginner learning the ropes
@@ -48,7 +48,7 @@ This playground is for YOU.
 
 ---
 
-## 🌈 What You’ll Explore
+## 🌈 What You’ll Explore..
 
 - Units: `px`, `%`, `em`, `rem` – when to use what
 - `opacity` vs `rgba()` transparency
@@ -58,7 +58,7 @@ This playground is for YOU.
 
 ---
 
-## 👨‍💻 About the Creator
+## 👨‍💻 About the Creator..
 
 Hey! I'm **Vineet Seth**, a CS undergrad at **SRM KTR** with a love for:
 
@@ -69,7 +69,7 @@ Hey! I'm **Vineet Seth**, a CS undergrad at **SRM KTR** with a love for:
 
 > _“Don’t just code it – feel it.”_
 
-Let’s connect:
+Let’s connect:..
 
 - 📸 [Instagram](https://www.instagram.com/vineet__seth)  
 - 🐦 [Twitter / X](https://twitter.com/vineet2511_05)  
