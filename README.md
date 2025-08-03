@@ -1,6 +1,6 @@
 # 🎨 Web Dev Playground – Code. Break. Fix. Repeat.
 
-Welcome to your ultimate HTML/CSS playground where you **tinker, mess up (on purpose), and master the frontend game** like a pro in training.
+Welcome to your ultimate HTML/CSS/JavaScript playground where you **tinker, mess up (on purpose), and master the frontend game** like a pro in training.
 
 ---
 
