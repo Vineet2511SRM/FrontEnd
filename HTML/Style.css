@@ -40,7 +40,7 @@ header {
     border-radius: var(--border-radius) var(--border-radius) 0 0;
     width: 90vw;
     max-width: 700px;
-    backdrop-filter: blur(12px);
+
     border: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -98,7 +98,7 @@ section {
     padding: 35px 40px 30px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    backdrop-filter: blur(10px);
+    width: 90vw;
     border: 1px solid rgba(255,255,255,0.2);
     transition: box-shadow var(--transition-speed);
     cursor: default;
@@ -138,7 +138,7 @@ ul li::before {
     top: 0;
     font-size: 1.3rem;
     line-height: 1;
-    user-select: none;
+
 }
 
 ul li b {
@@ -154,7 +154,7 @@ footer {
     margin-top: 40px;
     width: 90vw;
     max-width: 700px;
-    backdrop-filter: blur(12px);
+
     border: 1px solid rgba(255,255,255,0.2);
 }
 
