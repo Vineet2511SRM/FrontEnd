@@ -1,115 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reptile Interactive Cursor</title>
-<style>
-    body {
-        margin: 0;
-        background: black;
-        overflow: hidden;
-    }
-    canvas {
-        display: block;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reptile Interactive Cursor | @code_wars_official</title>
 </head>
 <body>
-<canvas id="canvas"></canvas>
+    <body>
+    <script  src="script.js"></script>
 
-<script>
-const canvas = document.getElementById("canvas");
-const ctx = canvas.getContext("2d");
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
-
-document.addEventListener("mousemove", e => {
-    mouse.x = e.clientX;
-    mouse.y = e.clientY;
-});
-
-class Segment {
-    constructor(x, y, length) {
-        this.x = x;
-        this.y = y;
-        this.length = length;
-        this.angle = 0;
-    }
-    follow(targetX, targetY) {
-        const dx = targetX - this.x;
-        const dy = targetY - this.y;
-        this.angle = Math.atan2(dy, dx);
-        this.x = targetX - Math.cos(this.angle) * this.length;
-        this.y = targetY - Math.sin(this.angle) * this.length;
-    }
-    drawLegs() {
-        const legLength = 10;
-        const legAngle = Math.PI / 4;
-
-        // Left leg
-        ctx.beginPath();
-        ctx.moveTo(this.x, this.y);
-        ctx.lineTo(
-            this.x + Math.cos(this.angle + legAngle) * legLength,
-            this.y + Math.sin(this.angle + legAngle) * legLength
-        );
-        ctx.stroke();
-
-        // Right leg
-        ctx.beginPath();
-        ctx.moveTo(this.x, this.y);
-        ctx.lineTo(
-            this.x + Math.cos(this.angle - legAngle) * legLength,
-            this.y + Math.sin(this.angle - legAngle) * legLength
-        );
-        ctx.stroke();
-    }
-    draw() {
-        const tx = this.x + Math.cos(this.angle) * this.length;
-        const ty = this.y + Math.sin(this.angle) * this.length;
-
-        // Body segment
-        ctx.beginPath();
-        ctx.moveTo(this.x, this.y);
-        ctx.lineTo(tx, ty);
-        ctx.stroke();
-
-        // Legs for "reptile" effect
-        this.drawLegs();
-    }
-}
-
-let segments = [];
-let segmentCount = 25;
-for (let i = 0; i < segmentCount; i++) {
-    segments.push(new Segment(mouse.x, mouse.y, 20));
-}
-
-function animate() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    ctx.strokeStyle = "white";
-    ctx.lineWidth = 2;
-
-    // Follow chain
-    segments[0].follow(mouse.x, mouse.y);
-    for (let i = 1; i < segments.length; i++) {
-        segments[i].follow(segments[i - 1].x, segments[i - 1].y);
-    }
-
-    // Draw chain
-    for (let seg of segments) {
-        seg.draw();
-    }
-
-    requestAnimationFrame(animate);
-}
-
-animate();
-</script>
+  </body>
+  </html>
 </body>
 </html>
+  
