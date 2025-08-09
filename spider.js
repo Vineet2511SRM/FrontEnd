@@ -18,24 +18,24 @@ var Input = {
     Input.keys[event.keyCode] = false;
   });
   document.addEventListener("mousedown", function(event) {
-    if ((event.button = 0)) {
+    if (event.button === 0) {
       Input.mouse.left = true;
     }
-    if ((event.button = 1)) {
+    if (event.button === 1) {
       Input.mouse.middle = true;
     }
-    if ((event.button = 2)) {
+    if (event.button === 2) {
       Input.mouse.right = true;
     }
   });
   document.addEventListener("mouseup", function(event) {
-    if ((event.button = 0)) {
+    if (event.button === 0) {
       Input.mouse.left = false;
     }
-    if ((event.button = 1)) {
+    if (event.button === 1) {
       Input.mouse.middle = false;
     }
-    if ((event.button = 2)) {
+    if (event.button === 2) {
       Input.mouse.right = false;
     }
   });
@@ -563,3 +563,23 @@ var Input = {
     legNum,
     Math.floor(4 + Math.random() * legNum * 8)
   );
+
+  // Eye tracking effect
+const eye1 = document.getElementById("eye1");
+const eye2 = document.getElementById("eye2");
+
+document.addEventListener("mousemove", (e) => {
+  eye1.style.transform = `translate(${e.clientX - 40}px, ${e.clientY - 40}px)`;
+  eye2.style.transform = `translate(${e.clientX + 20}px, ${e.clientY - 40}px)`;
+});
+
+// Optional click sound
+document.addEventListener("mousedown", () => {
+  const clickSound = new Audio("https://freesound.org/data/previews/341/341695_6262460-lq.mp3");
+  clickSound.play();
+});
+
+// --- Your original creature animation code goes here ---
+// Just fix event.button bug in mouse events (replace = with ===)
+// And pick the spider-like setup:
+// setupTestSquid(2, 8);
