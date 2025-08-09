@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Reptile Interactive Cursor</title>
 <style>
-  body {
-    margin: 0;
-    background: black;
-    overflow: hidden;
-  }
-  canvas {
-    display: block;
-  }
+    body {
+        margin: 0;
+        background: black;
+        overflow: hidden;
+    }
+    canvas {
+        display: block;
+    }
 </style>
 </head>
 <body>
@@ -27,12 +27,11 @@ canvas.height = window.innerHeight;
 
 let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
 
-document.addEventListener("mousemove", function(event) {
-    mouse.x = event.clientX;
-    mouse.y = event.clientY;
+document.addEventListener("mousemove", e => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
 });
 
-// Segment class for snake-like movement
 class Segment {
     constructor(x, y, length) {
         this.x = x;
@@ -40,29 +39,52 @@ class Segment {
         this.length = length;
         this.angle = 0;
     }
-    follow(tx, ty) {
-        const dx = tx - this.x;
-        const dy = ty - this.y;
+    follow(targetX, targetY) {
+        const dx = targetX - this.x;
+        const dy = targetY - this.y;
         this.angle = Math.atan2(dy, dx);
-        const nx = tx - Math.cos(this.angle) * this.length;
-        const ny = ty - Math.sin(this.angle) * this.length;
-        this.x = nx;
-        this.y = ny;
+        this.x = targetX - Math.cos(this.angle) * this.length;
+        this.y = targetY - Math.sin(this.angle) * this.length;
+    }
+    drawLegs() {
+        const legLength = 10;
+        const legAngle = Math.PI / 4;
+
+        // Left leg
+        ctx.beginPath();
+        ctx.moveTo(this.x, this.y);
+        ctx.lineTo(
+            this.x + Math.cos(this.angle + legAngle) * legLength,
+            this.y + Math.sin(this.angle + legAngle) * legLength
+        );
+        ctx.stroke();
+
+        // Right leg
+        ctx.beginPath();
+        ctx.moveTo(this.x, this.y);
+        ctx.lineTo(
+            this.x + Math.cos(this.angle - legAngle) * legLength,
+            this.y + Math.sin(this.angle - legAngle) * legLength
+        );
+        ctx.stroke();
     }
     draw() {
         const tx = this.x + Math.cos(this.angle) * this.length;
         const ty = this.y + Math.sin(this.angle) * this.length;
+
+        // Body segment
         ctx.beginPath();
         ctx.moveTo(this.x, this.y);
         ctx.lineTo(tx, ty);
-        ctx.strokeStyle = "white";
-        ctx.lineWidth = 2;
         ctx.stroke();
+
+        // Legs for "reptile" effect
+        this.drawLegs();
     }
 }
 
 let segments = [];
-let segmentCount = 20;
+let segmentCount = 25;
 for (let i = 0; i < segmentCount; i++) {
     segments.push(new Segment(mouse.x, mouse.y, 20));
 }
@@ -70,11 +92,16 @@ for (let i = 0; i < segmentCount; i++) {
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 2;
+
+    // Follow chain
     segments[0].follow(mouse.x, mouse.y);
     for (let i = 1; i < segments.length; i++) {
         segments[i].follow(segments[i - 1].x, segments[i - 1].y);
     }
 
+    // Draw chain
     for (let seg of segments) {
         seg.draw();
     }
