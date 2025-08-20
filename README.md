@@ -1,6 +1,6 @@
 # 🎨 Web Dev Playground – Code. Break. Fix. Repeat.
 
-Hello Everyone*** Welcome to your ultimate HTML/CSS/JavaScript playground where you **tinker, mess up (on purpose), and master the frontend game** like a pro in training.
+Hii Everyone*** Welcome to your ultimate HTML/CSS/JavaScript playground where you **tinker, mess up (on purpose), and master the frontend game** like a pro in training.
 
 ---
 
@@ -58,7 +58,7 @@ This playground is for YOU.
 
 ---
 
-## 👨‍💻 About the Creator..
+## 👨‍💻 About the Creator
 
 Hello Everyone! I'm **Vineet Seth**, a CS undergrad at **SRM KTR** with a love for:
 
