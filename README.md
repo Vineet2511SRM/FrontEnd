@@ -60,7 +60,7 @@ This playground is for YOU.
 
 ## 👨‍💻 About the Creator
 
-Hello Everyone! I'm **Vineet Seth**, a CS undergrad at **SRM KTR** with a love for:
+Hii Everyone! I'm **Vineet Seth**, a CS undergrad at **SRM KTR** with a love for:
 
 - 🛡️ **Cybersecurity**  
 - 💻 **Frontend development**  
