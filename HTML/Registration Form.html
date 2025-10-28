@@ -1,35 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration form</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
 
+    .form-container {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      transition: all 0.3s ease;
+    }
+
+    .form-container:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2d3e50;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+
+    input[type="text"]:focus,
+    select:focus {
+      border-color: #4a6cf7;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(74, 108, 247, 0.2);
+    }
+
+    label {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    button {
+      background-color: #4a6cf7;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #3a5de0;
+      transform: scale(1.02);
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    .name-fields {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .name-fields input {
+      flex: 1;
+    }
+  </style>
+</head>
 <body>
+
+  <div class="form-container">
     <h3>Registration Form</h3>
     <form action="/action" method="post">
-        <div>
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
-            <input type="text" id="lastName" placeholder="Last Name" required>
-        </div>
-        <div>
-            <label for = "gender">Please select gender</label>
-            <select name="gender" id="gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Others">Other</option>
-            </select>
-        </div>
+      <div class="name-fields">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+      </div>
 
-        <div>
-            Do you agree to all terms of service?
-            <input type="checkbox" id="terms" name="terms">
-            <label for="terms">Yes,I agree</label>
-        </div>
-        <button type="submit">Register</button>
+      <div>
+        <label for="gender">Please select gender</label>
+        <select name="gender" id="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to all terms of service</label>
+      </div>
+
+      <button type="submit">Register</button>
     </form>
-</body>
+  </div>
 
+</body>
 </html>
