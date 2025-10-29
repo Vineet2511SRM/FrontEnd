@@ -1,4 +1,4 @@
-<!--Video audio and media tag-->
+<!-- Video, Audio, and Media Tag Example with Styling -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,25 +6,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video and Audio Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #f0f4f8, #dfe9f3);
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0077cc;
+            margin-top: 30px;
+        }
+
+        video, audio, iframe {
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            width: 600px;
+            max-width: 90%;
+        }
+
+        iframe {
+            width: 560px;
+            height: 315px;
+            max-width: 90%;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 0 30px;
+        }
+
+        audio {
+            width: 300px;
+        }
+
+        /* Add hover effects */
+        video:hover, iframe:hover {
+            transform: scale(1.02);
+            transition: 0.3s ease;
+        }
+    </style>
 </head>
 
 <body>
     <h1>Video and Audio Media</h1>
 
     <h2>Video Example</h2>
-    <video src="video.mp4" controls width="600" height="400">
+    <video src="video.mp4" controls>
         Your browser does not support the video tag.
     </video>
+
+    <h2>Audio Example</h2>
     <audio controls>
-        <source src="Tumho.mp3" type = "audio/mpeg">
+        <source src="Tumho.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
     <p>This is a simple video and audio example using HTML5 media tags.</p>
 
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XZwBNDGuWGU?si=me5cnvS4VV16nH82&amp;start=770" 
-    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture; 
-    web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe 
+        src="https://www.youtube-nocookie.com/embed/XZwBNDGuWGU?si=me5cnvS4VV16nH82&amp;start=770"
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
     <p>This is an embedded YouTube video.</p>
 </body>
 
